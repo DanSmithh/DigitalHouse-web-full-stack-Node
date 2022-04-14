@@ -32,4 +32,4 @@ Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](h
 
 
 ---
-⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/dansmithh) 😊
+⌨️ com ❤️ por [Dan Smith](https://gist.github.com/dansmithh) 😊

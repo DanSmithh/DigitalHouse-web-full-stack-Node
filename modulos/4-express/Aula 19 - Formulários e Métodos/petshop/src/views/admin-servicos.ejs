@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+
+<main>
+  <section class="cadastro">
+    <div class="container">
+      <h1>Painel Administrativo</h1>
+
+      <table>
+        <caption>
+          <div class="align-row">
+            <h3>Serviços </h3>
+            <a class="btn btn-success" href="/servicos/cadastrar">Adicionar</a>
+          </div>
+        </caption>
+
+        <thead>
+          <th>Nome</th>
+          <th>Preço</th>
+          <th>Descrição</th>
+          <th>Ações</th>
+        </thead>
+
+        <tbody>
+          <% servicos.forEach(servico => { %>
+          <tr>
+            <td><%= servico.nome %> </td>
+            <td><%= servico.valor %> </td>
+            <td><%= servico.descricao %> </td>
+            <td class="acoes">
+              <form action="#" method="POST">
+                <a href="/servicos/editar/<%= servico.id %>" class="btn">Editar</a>
+                <button type="submit" class="btn btn-secondary">Deletar</button>
+              </form>
+            </td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

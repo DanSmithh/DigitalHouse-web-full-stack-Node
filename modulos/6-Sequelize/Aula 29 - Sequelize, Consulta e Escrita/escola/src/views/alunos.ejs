@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<main>
+  <h1>Alunos</h1>
+
+  <% alunos.forEach(aluno => { %>
+    <div class="row">
+      <%= aluno.nome %>
+      <%= aluno.sobrenome %>
+      <%= aluno.matricula %>
+
+      <div class="actions">
+        <a href="/alunos/editar/<%= aluno.id %>">Editar</a>
+        <form action="/alunos/deletar/<%= aluno.id %>" method="post">
+          <button type="submit" class="danger">Deletar</a>
+        </form>
+      </div>
+    </div>
+  <% }) %>
+</main>
+
+<%- include('partials/footer') %>

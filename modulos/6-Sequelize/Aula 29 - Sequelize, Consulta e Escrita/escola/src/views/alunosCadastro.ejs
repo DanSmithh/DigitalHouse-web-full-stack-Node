@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+<main>
+  <% if (erro) { %>
+   <h3 style="color: red;"><%= erro %></h3>
+  <% } %>
+  <h1><%= formTitle %> </h1>
+
+  <form action="<%= formAction %> " method="post">
+    <div class="field">
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" value="<%= aluno.nome %>">
+    </div>
+
+    <div class="field">
+      <label for="sobrenome">Sobrenome</label>
+      <input type="text" name="sobrenome" id="sobrenome" value="<%= aluno.sobrenome %>">
+    </div>
+
+    <div class="field">
+      <label for="matricula">Ano Matrícula</label>
+      <input type="number" name="matricula" id="matricula" value="<%= aluno.matricula %>">
+    </div>
+
+    <br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</main>
+
+<%- include('partials/footer') %>

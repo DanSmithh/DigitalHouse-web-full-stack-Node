@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+<main>
+  <section class="cadastro-edicao">
+    <div class="container">
+      <% if (servico) { %>
+        <h1>Editar de serviço</h1>
+      <% } else { %>
+        <h1>Cadastro de serviços</h1>
+      <% } %>
+
+      <% if (servico) { %>
+        <form action="/servicos/editar/<%= servico.id %>?_method=PUT" method="POST">
+      <% } else { %>
+        <form action="/servicos/cadastrar" method="POST">
+      <% } %>
+        <div class="align-row form-control">
+          <div class="field">
+            <label for="nome">Nome do serviço</label>
+            <input type="text" id="nome" name="nome" value="<% if (servico) { %><%= servico.nome %><% } %>">
+          </div>
+
+          <div class="field">
+            <label for="valor">Preço</label>
+            <input type="text" id="valor" name="valor" value="<% if (servico) { %><%= servico.valor %><% } %>">
+          </div>
+        </div>
+  
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" name="descricao"><% if (servico) { %><%= servico.descricao %><% } %></textarea>
+
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %> 

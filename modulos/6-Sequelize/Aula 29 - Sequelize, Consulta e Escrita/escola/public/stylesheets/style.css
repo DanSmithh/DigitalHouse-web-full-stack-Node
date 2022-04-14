@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+header {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: #00B7FF;
+  padding: 1rem;
+  color: white;
+}
+
+header section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+header nav ul li {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+main div {
+  padding: 1rem;
+  width: 70vw;
+  border: 1px solid gray;
+}
+
+main form .field input {
+  width: 100%;
+  min-height: 1.5rem;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.danger {
+  color: red;
+}
+
+.actions {
+  gap: 1rem;
+  border: none;
+  display: flex;
+  flex-flow: row wrap;
+  width: auto;
+}

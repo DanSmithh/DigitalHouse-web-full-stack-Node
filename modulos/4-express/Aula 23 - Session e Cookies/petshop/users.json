@@ -1,0 +1,12 @@
+[
+  {
+    "nome": "Renato",
+    "email": "renato@mail.com",
+    "senha": "$2a$10$qV1J4m7bDuYHe2bfkitICeCp8FDxPA.aX9WQLLd4En.SS7uGeshlO"
+  },
+  {
+    "nome": "Bruno",
+    "email": "bruno@mail.com",
+    "senha": "$2a$10$KvXoaWDnNvb69xvN4KG23uMx6gTBv7Tk2h/59fI/jAjutuNJSdCj6"
+  }
+]
